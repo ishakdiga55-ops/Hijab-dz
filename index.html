@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hijab dz | متجر الألبسة النسائية</title>
+    
+    <style>
+        /* إعدادات عامة */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: #fdfbf7; /* لون كريمي فاتح */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* الترويسة وشريط التنقل */
+        header {
+            background-color: #4a3b42; /* لون بني داكن أنيق */
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #e8a0a8; /* لون وردي عند التمرير */
+        }
+
+        /* القسم الرئيسي (Hero) */
+        .hero {
+            background-color: #4a3b42;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* قسم المنتج الواحد */
+        .product-section {
+            padding: 40px 20px;
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .product-section h2 {
+            color: #4a3b42;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        /* بطاقة المنتج */
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            margin: 20px 0 10px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .product-card .price {
+            color: #e8a0a8;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .btn-order {
+            display: inline-block;
+            background-color: #10b981; /* لون أخضر واتساب */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .btn-order:hover {
+            background-color: #059669;
+        }
+
+        /* قسم التواصل */
+        .contact-section {
+            background-color: #f0e6e8;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        .contact-section h3 {
+            color: #4a3b42;
+            margin-bottom: 15px;
+        }
+
+        .contact-section p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            direction: ltr; /* لضبط شكل الأرقام */
+        }
+
+        /* التذييل */
+        footer {
+            background-color: #4a3b42;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الترويسة -->
+    <header>
+        <h1>hijab dz</h1>
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#product">المنتج</a>
+            <a href="#contact">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section class="hero">
+        <h2>أهلاً بك في متجر hijab dz</h2>
+        <p>أجمل الألبسة النسائية والحجابات العصرية في الجزائر</p>
+    </section>
+
+    <!-- قسم المنتج الواحد -->
+    <section class="product-section" id="product">
+        <h2>منتجنا المميز ✨</h2>
+        
+        <div class="product-card">
+            <!-- صورة المنتج (يمكنك تغيير الرابط لاحقاً) -->
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="حجاب أنيق">
+            
+            <h3>حجاب حريري فاخر</h3>
+            <p class="price">1500 دج</p>
+            
+            <!-- زر الطلب مع رقم الهاتف -->
+            <a href="https://wa.me/213550123456" class="btn-order" target="_blank">اطلبي الآن عبر واتساب 📞</a>
+        </div>
+    </section>
+
+    <!-- قسم التواصل مع رقم الهاتف -->
+    <section class="contact-section" id="contact">
+        <h3>للطلب والاستفسار تواصلي معنا:</h3>
+        <p>📞 0550 12 34 56</p>
+    </section>
+
+    <!-- التذييل -->
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - متجر hijab dz</p>
+    </footer>
+
+</body>
+</html>
