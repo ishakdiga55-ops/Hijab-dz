@@ -13,15 +13,15 @@
 
         body {
             font-family: Tahoma, Arial, sans-serif;
-            background-color: #fdfbf7; /* لون كريمي فاتح */
+            background-color: #fdfbf7;
             margin: 0;
             padding: 0;
             color: #333;
         }
 
-        /* الترويسة وشريط التنقل */
+        /* الترويسة */
         header {
-            background-color: #4a3b42; /* لون بني داكن أنيق */
+            background-color: #4a3b42;
             color: white;
             padding: 15px 20px;
             display: flex;
@@ -44,10 +44,10 @@
         }
 
         nav a:hover {
-            color: #e8a0a8; /* لون وردي عند التمرير */
+            color: #e8a0a8;
         }
 
-        /* القسم الرئيسي (Hero) */
+        /* القسم الرئيسي */
         .hero {
             background-color: #4a3b42;
             color: white;
@@ -65,7 +65,7 @@
             margin-bottom: 20px;
         }
 
-        /* قسم المنتج الواحد */
+        /* قسم المنتج */
         .product-section {
             padding: 40px 20px;
             max-width: 500px;
@@ -93,6 +93,7 @@
             width: 100%;
             height: 350px;
             object-fit: cover;
+            background-color: #f0f0f0; /* خلفية مؤقتة إذا لم توجد الصورة */
         }
 
         .product-card h3 {
@@ -108,9 +109,10 @@
             margin-bottom: 20px;
         }
 
+        /* زر الطلب عبر واتساب */
         .btn-order {
             display: inline-block;
-            background-color: #10b981; /* لون أخضر واتساب */
+            background-color: #10b981;
             color: white;
             border: none;
             padding: 15px 30px;
@@ -139,11 +141,24 @@
             margin-bottom: 15px;
         }
 
-        .contact-section p {
-            font-size: 20px;
+        /* رابط الهاتف */
+        .phone-link {
+            font-size: 22px;
             font-weight: bold;
-            color: #333;
-            direction: ltr; /* لضبط شكل الأرقام */
+            color: #4a3b42;
+            text-decoration: none;
+            direction: ltr;
+            display: inline-block;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 10px;
+        }
+
+        .phone-link:hover {
+            background-color: #e8a0a8;
+            color: white;
         }
 
         /* التذييل */
@@ -179,21 +194,23 @@
         <h2>منتجنا المميز ✨</h2>
         
         <div class="product-card">
-            <!-- صورة المنتج (يمكنك تغيير الرابط لاحقاً) -->
+            <!-- ضع هنا رابط صورة منتجك الحقيقي -->
             <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="حجاب أنيق">
             
             <h3>حجاب حريري فاخر</h3>
             <p class="price">1500 دج</p>
             
-            <!-- زر الطلب مع رقم الهاتف -->
-            <a href="https://wa.me/213550123456" class="btn-order" target="_blank">اطلبي الآن عبر واتساب 📞</a>
+            <!-- زر الطلب عبر واتساب مع رقمك الصحيح -->
+            <!-- ملاحظة: الرقم يبدأ بـ 213 (كود الجزائر) ثم رقمك بدون الصفر الأول -->
+            <a href="https://wa.me/213550109390" class="btn-order" target="_blank">اطلبي الآن عبر واتساب 📞</a>
         </div>
     </section>
 
-    <!-- قسم التواصل مع رقم الهاتف -->
+    <!-- قسم التواصل مع رقم الهاتف الصحيح -->
     <section class="contact-section" id="contact">
         <h3>للطلب والاستفسار تواصلي معنا:</h3>
-        <p>📞 0550 12 34 56</p>
+        <!-- رابط اتصال مباشر بالرقم -->
+        <a href="tel:+213550109390" class="phone-link">📞 05 50 10 93 90</a>
     </section>
 
     <!-- التذييل -->
