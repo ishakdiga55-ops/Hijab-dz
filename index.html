@@ -6,20 +6,21 @@
     <title>hijab dz | متجر الألبسة النسائية</title>
     
     <style>
-        /* إعدادات عامة */
+        /* ===== إعدادات عامة ===== */
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
             font-family: Tahoma, Arial, sans-serif;
             background-color: #fdfbf7;
-            margin: 0;
-            padding: 0;
             color: #333;
+            line-height: 1.6;
         }
 
-        /* الترويسة */
+        /* ===== الترويسة ===== */
         header {
             background-color: #4a3b42;
             color: white;
@@ -31,7 +32,6 @@
         }
 
         header h1 {
-            margin: 0;
             font-size: 24px;
             letter-spacing: 1px;
         }
@@ -47,7 +47,7 @@
             color: #e8a0a8;
         }
 
-        /* القسم الرئيسي */
+        /* ===== القسم الرئيسي ===== */
         .hero {
             background-color: #4a3b42;
             color: white;
@@ -65,7 +65,7 @@
             margin-bottom: 20px;
         }
 
-        /* قسم المنتج */
+        /* ===== قسم المنتج ===== */
         .product-section {
             padding: 40px 20px;
             max-width: 500px;
@@ -85,7 +85,6 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-            text-align: center;
             padding-bottom: 25px;
         }
 
@@ -93,7 +92,7 @@
             width: 100%;
             height: 350px;
             object-fit: cover;
-            background-color: #f0f0f0; /* خلفية مؤقتة إذا لم توجد الصورة */
+            background-color: #f0f0f0;
         }
 
         .product-card h3 {
@@ -114,31 +113,32 @@
             display: inline-block;
             background-color: #10b981;
             color: white;
-            border: none;
             padding: 15px 30px;
             border-radius: 8px;
-            cursor: pointer;
             font-size: 18px;
             font-weight: bold;
             text-decoration: none;
             transition: background 0.3s;
+            border: none;
+            cursor: pointer;
         }
 
         .btn-order:hover {
             background-color: #059669;
         }
 
-        /* قسم التواصل */
+        /* ===== قسم التواصل ===== */
         .contact-section {
             background-color: #f0e6e8;
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
             margin-top: 40px;
         }
 
         .contact-section h3 {
             color: #4a3b42;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            font-size: 22px;
         }
 
         /* رابط الهاتف */
@@ -150,10 +150,10 @@
             direction: ltr;
             display: inline-block;
             background: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border-radius: 50px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-top: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s;
         }
 
         .phone-link:hover {
@@ -161,7 +161,7 @@
             color: white;
         }
 
-        /* التذييل */
+        /* ===== التذييل ===== */
         footer {
             background-color: #4a3b42;
             color: #ccc;
@@ -194,22 +194,21 @@
         <h2>منتجنا المميز ✨</h2>
         
         <div class="product-card">
-            <!-- ضع هنا رابط صورة منتجك الحقيقي -->
-            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="حجاب أنيق">
+            
+            <!-- ⬇️⬇️ هنا تم وضع اسم صورتك بالضبط ⬇️⬇️ -->
+            <img src="hijab.jpg.jpeg" alt="حجاب أنيق">
             
             <h3>حجاب حريري فاخر</h3>
             <p class="price">1500 دج</p>
             
-            <!-- زر الطلب عبر واتساب مع رقمك الصحيح -->
-            <!-- ملاحظة: الرقم يبدأ بـ 213 (كود الجزائر) ثم رقمك بدون الصفر الأول -->
+            <!-- زر الطلب عبر واتساب -->
             <a href="https://wa.me/213550109390" class="btn-order" target="_blank">اطلبي الآن عبر واتساب 📞</a>
         </div>
     </section>
 
-    <!-- قسم التواصل مع رقم الهاتف الصحيح -->
+    <!-- قسم التواصل مع رقم الهاتف -->
     <section class="contact-section" id="contact">
         <h3>للطلب والاستفسار تواصلي معنا:</h3>
-        <!-- رابط اتصال مباشر بالرقم -->
         <a href="tel:+213550109390" class="phone-link">📞 05 50 10 93 90</a>
     </section>
 
